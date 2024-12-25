@@ -1,0 +1,144 @@
+Scale,Dimension,Item-sit
+PERMA,Accomplishment,How much does this experience indicate the speaker felt they were making progress towards accomplishing their goals?
+PERMA,Engagement,How much does this experience indicate the speaker became absorbed in what they were doing?
+PERMA,Positive Emotion ,How much does this experience indicate the speaker felt joyful?
+PERMA,Negative emotion,How much does this experience indicate the speaker felt anxious?
+PERMA,Accomplishment,How much does this experience indicate the speaker achieved the important goals they set for themselves?
+PERMA,Health,How much does this experience indicate the speaker perceived their health positively?
+PERMA,Meaning,How much does this experience indicate the speaker felt their life was purposeful and meaningful?
+PERMA,Relationships,How much does this experience indicate the speaker received help and support from others when needed?
+PERMA,Meaning,How much does this experience indicate the speaker felt what they did in life was valuable and worthwhile?
+PERMA,Engagement,How much does this experience indicate the speaker felt excited and interested in things?
+PERMA,Lonliness,How much does this experience indicate the speaker felt lonely in their daily life?
+PERMA,Health,How much does this experience indicate the speaker felt satisfied with their current physical health?
+PERMA,Positive Emotion,How much does this experience indicate the speaker felt positive?
+PERMA,Negative emotion,How much does this experience indicate the speaker felt angry?
+PERMA,Accomplishment ,How much does this experience indicate the speaker was able to handle their responsibilities?
+PERMA,Negative emotion,How much does this experience indicate the speaker felt sad?
+PERMA,Engagement,How much does this experience indicate the speaker lost track of time while doing something they enjoyed?
+PERMA,Health,How much does this experience indicate the speaker perceived their health to be better than others of the same age and sex?
+PERMA,Relationships,How much does this experience indicate the speaker felt loved?
+PERMA,Meaning,How much does this experience indicate the speaker felt they had a sense of direction in life?
+PERMA,Relationships,How much does this experience indicate the speaker felt satisfied with their personal relationships?
+PERMA,Positive Emotion,How much does this experience indicate the speaker felt contented?
+PERMA,Happiness,How much does this experience indicate the speaker felt happy overall?
+WBP,Autonomy,How much does this experience indicate the speaker felt free to act on their decisions?
+WBP,Autonomy,How much does this experience indicate the speaker felt free to make their own choices?
+WBP,Autonomy,How much does this experience indicate the speaker felt free to decide for themselves how to live their life?
+WBP,Clear Thinking,How much does this experience indicate the speaker’s ability to think clearly?
+WBP,Clear Thinking,How much does this experience indicate the speaker stayed focused when they needed to?
+WBP,Clear Thinking,How much does this experience indicate the speaker was able to concentrate when necessary?
+WBP,Competence,How much does this experience indicate the speaker was competent and capable in important activities?
+WBP,Competence,How much does this experience indicate the speaker believes they do most things well?
+WBP,Competence,How much does this experience indicate the speaker’s ability to perform well and succeed in most things they do
+WBP,Emotional Stability,How much does this experience indicate the speaker did not get upset easily?
+WBP,Emotional Stability,How much does this experience indicate the speaker maintained their composure?
+WBP,Emotional Stability,How much does this experience indicate the speaker was emotionally balanced and even-tempered?
+WBP,Empathy,How much does this experience indicate the speaker's heart went out to people who are unhappy?
+WBP,Empathy,How much does this experience indicate the speaker felt other's emotions?
+WBP,Empathy,How much does this experience indicate other people's misfortunes disturbed the speaker a great deal?
+WBP,Empathy,How much does this experience indicate the speaker easily got caught up in other people's feelings?
+WBP,Engagement,How much does this experience indicate the speaker was really interested in what they were doing?
+WBP,Engagement,How much does this experience indicate the speaker was engaged and interested in the activity?
+WBP,Engagement,How much does this experience indicate the speaker felt excited by what they were doing?
+WBP,Meaning,How much does this experience indicate the speaker found purpose and meaning?
+WBP,Meaning,How much does this experience indicate the speaker felt a sense of direction?
+WBP,Meaning,How much does this experience indicate the speaker had a clear sense of purpose?
+WBP,Optimism,How much does this experience indicate the speaker felt very optimistic in the moment?
+WBP,Optimism,How much does this experience indicate the speaker felt positive about their future?
+WBP,Optimism,How much does this experience indicate the speaker felt very optimistic in the moment?
+WBP,Positive Emotions,How much does this experience indicate the speaker felt cheerful?
+WBP,Positive Emotions,How much does this experience indicate the speaker felt happy?
+WBP,Positive Emotions,How much does this experience indicate the speaker considered themselves happy?
+WBP,Positive Relationships,How much does this experience indicate the speaker felt supported by people who care about them?
+WBP,Positive Relationships,How much does this experience indicate the speaker has close and secure relationships?
+WBP,Positive Relationships,How much does this experience indicate the speaker has people with whom they can discuss intimate and personal matters?
+WBP,Positive Relationships,How much does this experience indicate the speaker received help and support from others when they needed it?
+WBP,Prosocial Behavior,How much does this experience indicate the speaker offered help to others?
+WBP,Prosocial Behavior,How much does this experience indicate the speaker willingly gave their time to others in need?
+WBP,Prosocial Behavior,How much does this experience indicate the speaker would do almost anything they could to assist if a person needed help?
+WBP,Resilience,How much does this experience indicate the speaker bounced back quickly after hard times?
+WBP,Resilience,How much does this experience indicate the speaker recovered quickly from a stressful event?
+WBP,Resilience,How much does this experience indicate the speaker got over and recovered from significant life difficulties?
+WBP,Self-Acceptance,How much does this experience indicate the speaker accepted their flaws and inadequacies?
+WBP,Self-Acceptance,How much does this experience indicate the speaker admitted their shortcomings without shame or embarrassment?
+WBP,Self-Acceptance,How much does this experience indicate the speaker saw their own problems and shortcomings without getting distressed by them?
+WBP,Self-Acceptance,How much does this experience indicate the speaker accepted who they are?
+WBP,Self-Esteem,How much does this experience indicate the speaker felt they were a person of worth?
+WBP,Self-Esteem,How much does this experience indicate the speaker felt a lot of things about themselves are good?
+WBP,Self-Esteem,How much does this experience indicate the speaker felt that they have a number of good qualities?
+WBP,Vitality,How much does this experience indicate the speaker felt full of energy?
+WBP,Vitality,How much does this experience indicate the speaker felt energetic?
+WBP,Vitality,How much does this experience indicate the speaker felt active and vigorous?
+SWLS,LS,How much does this experience indicate the speaker felt their life was close to their ideal?
+SWLS,LS,How much does this experience indicate the speaker felt the conditions of their life were excellent?
+SWLS,LS,How much does this experience indicate the speaker felt satisfied with their life?
+SWLS,LS,How much does this experience indicate the speaker felt they had gotten the important things they wanted in life?
+SWLS,LS,How much does this experience indicate the speaker felt they would change almost nothing if they could live life over?
+PWB,Autonomy,"How much does this experience indicate the speaker was not afraid to voice their opinions, even when they were in opposition to others?"
+PWB,Personal Growth,"How much does this experience indicate the speaker was continuously in the process of learning, changing, and growing?"
+PWB,Environmental Mastery,How much does this experience indicate the speaker felt in charge of the situation?
+PWB,Positive Relations,"How much does this experience indicate the speaker would be described as a giving person, willing to share their time with others?"
+PWB,Personal Growth,How much does this experience indicate the speaker was not interested in expanding their horizons?
+PWB,Purpose in Life,How much does this experience indicate the speaker enjoyed making plans for the future and working to make them a reality?
+PWB,Positive Relations,How much does this experience indicate the speaker was seen as loving and affectionate?
+PWB,Self-Acceptance,How much does this experience indicate the speaker felt disappointed by their achievements in life?
+PWB,Purpose in Life,How much does this experience indicate the speaker lived one day at a time without much thought for the future?
+PWB,Autonomy,How much does this experience indicate the speaker worried about what others thought of them?
+PWB,Self-Acceptance,How much does this experience indicate the speaker felt pleased with how their life had turned out?
+PWB,Environmental Mastery,How much does this experience indicate the speaker found it difficult to arrange their life in a satisfying way?
+PWB,Autonomy,How much does this experience indicate the speaker's decisions were not influenced by what everyone else was doing?
+PWB,Personal Growth,How much does this experience indicate the speaker had given up trying to make big improvements or changes in their life?
+PWB,Environmental Mastery,How much does this experience indicate the demands of everyday life affected the speaker negatively?
+PWB,Positive Relations,How much does this experience indicate the speaker had not experienced many warm and trusting relationships with others?
+PWB,Personal Growth,How much does this experience indicate the speaker valued new experiences that challenge their thoughts about themselves and the world?
+PWB,Positive Relations,How much does this experience indicate the speaker found it difficult and frustrating to maintain close relationships?
+PWB,Self-Acceptance,How much does this experience indicate the speaker's self-attitude was less positive than most people's?
+PWB,Purpose in Life,How much does this experience indicate the speaker felt a sense of direction and purpose?
+PWB,Autonomy,How much does this experience indicate the speaker judged themselves by their own values rather than by others' values?
+PWB,Self-Acceptance,How much does this experience indicate the speaker felt confident and positive about themselves?
+PWB,Environmental Mastery,How much does this experience indicate the speaker had built a living environment and lifestyle they liked?
+PWB,Autonomy,How much does this experience indicate the speaker was influenced by people with strong opinions?
+PWB,Personal Growth,How much does this experience indicate the speaker did not enjoy new situations that required change in familiar routines?
+PWB,Environmental Mastery,How much does this experience indicate the speaker felt they did not fit well with the people and community around them?
+PWB,Positive Relations,How much does this experience indicate the speaker felt mutual trust with their friends?
+PWB,Personal Growth,How much does this experience indicate the speaker felt they hadn't improved much as a person over the years?
+PWB,Purpose in Life,"How much does this experience indicate the speaker felt they had direction in life, unlike those who wander aimlessly?"
+PWB,Positive Relations,How much does this experience indicate the speaker felt lonely due to a lack of close friends for sharing concerns?
+PWB,Self-Acceptance,How much does this experience indicate the speaker felt good about themselves when comparing to friends and acquaintances?
+PWB,Purpose in Life,How much does this experience indicate the speaker lacked a clear sense of what they were trying to accomplish in life?
+PWB,Purpose in Life,How much does this experience indicate the speaker felt as if they had done all there is to do in life?
+PWB,Self-Acceptance,How much does this experience indicate the speaker felt others had gotten more out of life than they had?
+PWB,Autonomy,"How much does this experience indicate the speaker had confidence in their opinions, even if contrary to the general consensus?"
+PWB,Environmental Mastery,How much does this experience indicate the speaker felt that they were good at managing the responsibilities of daily life?
+PWB,Personal Growth,How much does this experience indicate the speaker felt they had developed significantly as a person over time?
+PWB,Positive Relations,How much does this experience indicate the speaker enjoyed personal and mutual conversations with family members and friends?
+PWB,Purpose in Life,How much does this experience indicate the speaker found their daily activities trivial and unimportant?
+PWB,Self-Acceptance,How much does this experience indicate the speaker liked most parts of their personality?
+PWB,Autonomy,How much does this experience indicate the speaker found it difficult to voice their opinions on controversial matters?
+PWB,Environmental Mastery,How much does this experience indicate the speaker felt overwhelmed by their responsibilities?
+PANAS,Positive,How much does this experience indicate the speaker was interested?
+PANAS,Negative,How much does this experience indicate the speaker was distressed?
+PANAS,Positive,How much does this experience indicate the speaker was excited?
+PANAS,Negative,How much does this experience indicate the speaker was upset?
+PANAS,Positive,How much does this experience indicate the speaker was strong?
+PANAS,Negative,How much does this experience indicate the speaker was guilty?
+PANAS,Negative,How much does this experience indicate the speaker was scared?
+PANAS,Negative,How much does this experience indicate the speaker was hostile?
+PANAS,Positive,How much does this experience indicate the speaker was enthusiastic?
+PANAS,Positive,How much does this experience indicate the speaker was proud?
+PANAS,Negative,How much does this experience indicate the speaker was irritable?
+PANAS,Positive,How much does this experience indicate the speaker was alert?
+PANAS,Negative,How much does this experience indicate the speaker was ashamed?
+PANAS,Positive,How much does this experience indicate the speaker was inspired?
+PANAS,Negative,How much does this experience indicate the speaker was nervous?
+PANAS,Positive,How much does this experience indicate the speaker was determined?
+PANAS,Positive,How much does this experience indicate the speaker was attentive?
+PANAS,Negative,How much does this experience indicate the speaker was jittery?
+PANAS,Positive,How much does this experience indicate the speaker was active?
+PANAS,Negative,How much does this experience indicate the speaker was afraid?
+WHO-5,Well-Being,How much does this experience indicate the speaker felt cheerful and in good spirits?
+WHO-5,Well-Being,How much does this experience indicate the speaker felt calm and relaxed?
+WHO-5,Well-Being,How much does this experience indicate the speaker felt active and vigorous?
+WHO-5,Well-Being,How much does this experience indicate the speaker woke up feeling fresh and rested?
+WHO-5,Well-Being,How much does this experience indicate the speaker's daily life has been filled with things that interest them?

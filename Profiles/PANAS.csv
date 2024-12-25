@@ -1,0 +1,21 @@
+Dimension,Emotion,Item
+Positive,Interested,How much does this experience indicate the speaker was interested?
+Negative,Distressed,How much does this experience indicate the speaker was distressed?
+Positive,Excited,How much does this experience indicate the speaker was excited?
+Negative,Upset,How much does this experience indicate the speaker was upset?
+Positive,Strong,How much does this experience indicate the speaker was strong?
+Negative,Guilty,How much does this experience indicate the speaker was guilty?
+Negative,Scared,How much does this experience indicate the speaker was scared?
+Negative,Hostile,How much does this experience indicate the speaker was hostile?
+Positive,Enthusiastic,How much does this experience indicate the speaker was enthusiastic?
+Positive,Proud,How much does this experience indicate the speaker was proud?
+Negative,Irritable,How much does this experience indicate the speaker was irritable?
+Positive,Alert,How much does this experience indicate the speaker was alert?
+Negative,Ashamed,How much does this experience indicate the speaker was ashamed?
+Positive,Inspired,How much does this experience indicate the speaker was inspired?
+Negative,Nervous,How much does this experience indicate the speaker was nervous?
+Positive,Determined,How much does this experience indicate the speaker was determined?
+Positive,Attentive,How much does this experience indicate the speaker was attentive?
+Negative,Jittery,How much does this experience indicate the speaker was jittery?
+Positive,Active,How much does this experience indicate the speaker was active?
+Negative,Afraid,How much does this experience indicate the speaker was afraid?
