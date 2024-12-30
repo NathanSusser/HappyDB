@@ -1,7 +1,7 @@
 Scale,Dimension,Item-sit
 PERMA,Accomplishment,How much does this experience indicate the speaker felt they were making progress towards accomplishing their goals?
 PERMA,Engagement,How much does this experience indicate the speaker became absorbed in what they were doing?
-PERMA,Positive Emotion ,How much does this experience indicate the speaker felt joyful?
+PERMA,Positive Emotion,How much does this experience indicate the speaker felt joyful?
 PERMA,Negative emotion,How much does this experience indicate the speaker felt anxious?
 PERMA,Accomplishment,How much does this experience indicate the speaker achieved the important goals they set for themselves?
 PERMA,Health,How much does this experience indicate the speaker perceived their health positively?
@@ -13,7 +13,7 @@ PERMA,Lonliness,How much does this experience indicate the speaker felt lonely i
 PERMA,Health,How much does this experience indicate the speaker felt satisfied with their current physical health?
 PERMA,Positive Emotion,How much does this experience indicate the speaker felt positive?
 PERMA,Negative emotion,How much does this experience indicate the speaker felt angry?
-PERMA,Accomplishment ,How much does this experience indicate the speaker was able to handle their responsibilities?
+PERMA,Accomplishment,How much does this experience indicate the speaker was able to handle their responsibilities?
 PERMA,Negative emotion,How much does this experience indicate the speaker felt sad?
 PERMA,Engagement,How much does this experience indicate the speaker lost track of time while doing something they enjoyed?
 PERMA,Health,How much does this experience indicate the speaker perceived their health to be better than others of the same age and sex?
@@ -46,7 +46,7 @@ WBP,Meaning,How much does this experience indicate the speaker felt a sense of d
 WBP,Meaning,How much does this experience indicate the speaker had a clear sense of purpose?
 WBP,Optimism,How much does this experience indicate the speaker felt very optimistic in the moment?
 WBP,Optimism,How much does this experience indicate the speaker felt positive about their future?
-WBP,Optimism,How much does this experience indicate the speaker felt very optimistic in the moment?
+WBP,Optimism,How much does this experience indicate the speaker always feels optimistic in the moment?
 WBP,Positive Emotions,How much does this experience indicate the speaker felt cheerful?
 WBP,Positive Emotions,How much does this experience indicate the speaker felt happy?
 WBP,Positive Emotions,How much does this experience indicate the speaker considered themselves happy?

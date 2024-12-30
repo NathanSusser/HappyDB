@@ -50,3 +50,17 @@ Average Tokens: 15.986013986013987
 Max Tokens: 25
 Min Tokens: 11
 Total Tokens: 2286
+
+
+
+Model = gpt-4o
+Input Token Statistics:
+Average Tokens: 18976.902571243845
+Max Tokens: 216901
+Min Tokens: 16415
+Total Tokens: 1907842900
+Output Token Statistics:
+Average Tokens: 143.0
+Max Tokens: 143
+Min Tokens: 143
+Total Tokens: 14376505

@@ -1,4 +1,4 @@
-Dimension,Item,Item-sit
+﻿Dimension,Item,Item-sit
 Autonomy,I feel free to do whatever I decide to do.,How much does this experience indicate the speaker felt free to act on their decisions?
 Autonomy,I feel free to make my own choices.,How much does this experience indicate the speaker felt free to make their own choices?
 Autonomy,I feel I can decide for myself how to live my life.,How much does this experience indicate the speaker felt free to decide for themselves how to live their life?
@@ -23,7 +23,7 @@ Meaning,I feel I have a sense of direction in my life.,How much does this experi
 Meaning,My life has a clear sense of purpose.,How much does this experience indicate the speaker had a clear sense of purpose?
 Optimism,I feel very optimistic about my future.,How much does this experience indicate the speaker felt very optimistic in the moment?
 Optimism,My future looks very bright to me.,How much does this experience indicate the speaker felt positive about their future?
-Optimism,I am always optimistic about my future.,How much does this experience indicate the speaker felt very optimistic in the moment?
+Optimism,I am always optimistic about my future.,How much does this experience indicate the speaker always feels optimistic in the moment?
 Positive Emotions,I generally feel cheerful.,How much does this experience indicate the speaker felt cheerful?
 Positive Emotions,I am happy most of the time.,How much does this experience indicate the speaker felt happy?
 Positive Emotions,"All things considered, I would describe myself as a happy person.",How much does this experience indicate the speaker considered themselves happy?

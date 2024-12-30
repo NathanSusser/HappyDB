@@ -5,6 +5,7 @@ import os
 #set current directory
 os.chdir('/Users/nsusser/Desktop/Github/happyDB/') #fill in
 
+'''
 #read in the happyDB data
 hbd_df = pd.read_csv('happydb/data/cleaned_hm.csv')
 # Pull the clean sentences from the happyDB data
@@ -16,7 +17,7 @@ clean_sentences.set_index(['hmid', 'reflection_period', 'cleaned_hm'], inplace=T
 
 #save the clean_sentences dataframe to a csv
 clean_sentences.to_csv('dataframes/clean_sentences.csv', index=True)
-
+'''
 
 #Create CSV for the dimensions and items
 
@@ -63,6 +64,9 @@ combined_df = pd.concat([
     PANAS_df[['Scale', 'Dimension', 'Item-sit']],
     WHO_5_df[['Scale', 'Dimension', 'Item-sit']]
 ], axis=0).reset_index(drop=True)
+
+# Remove leading and trailing whitespace from all string entries
+combined_df = combined_df.map(lambda x: x.strip() if isinstance(x, str) else x)
 
 #save the dim_items_df dataframe to a csv
 combined_df.to_csv('dataframes/scales_df.csv', index=False)
