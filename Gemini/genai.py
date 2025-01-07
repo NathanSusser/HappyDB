@@ -139,11 +139,11 @@ for _, row in sentences.iterrows():
         # Update request counters
         request_count += 1
         total_requests += 1
-
+    break
 # Fill missing values with a placeholder
 ratings.fillna(-1, inplace=True)
 
 # Save the result as a Parquet file
-ratings.to_parquet('dataframes/tests/ratings.parquet')
+ratings.to_parquet('dataframes/tests/ratings_Jan_5.parquet')
 
 print("Processing completed. Ratings saved to Parquet file.")

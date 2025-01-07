@@ -1,7 +1,6 @@
 import openai
 import pandas as pd
 import os
-import google.generativeai as genai
 
 
 # Set up file paths
@@ -42,7 +41,7 @@ with open(output_file, 'w') as f:
             user_msg =  f"On a scale of 0 to 7 where 0 is strongly agree and 7 is strongly disagree, please rate ** {item} ** This is the experience: ** {sentence} ** Please only return the number on a scale of 0 to 7 of ** {item} **."
             
             msg = dev_msg + '\n' + user_msg + '\n'
-            f.write(msg)
+            
            
             
         break

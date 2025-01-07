@@ -18,7 +18,7 @@ sentences['token_count_input'] = 0
 sentences['token_count_output'] = 0
 
 # Initialize tokenizer
-def calculate_tokens(text, model="gpt-4o"):
+def calculate_tokens(text, model="gpt-4o-mini"):
     tokenizer = tiktoken.encoding_for_model(model)
     return len(tokenizer.encode(text))
 
@@ -27,8 +27,9 @@ for idx, row in sentences.iterrows():
     period = row['reflection_period']
     sentence = row['cleaned_hm']
     
-    if idx % 10000 == 0:
+    if idx == 50:
         print(f"Processing row: {idx}")
+        break
     
     # Convert period to a descriptive time
     if period == "24h":
