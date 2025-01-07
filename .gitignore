@@ -16,3 +16,4 @@ venv/
 
 # Ignore dataframes
 dataframes/
+embedding analysis/tsne.ipynb
