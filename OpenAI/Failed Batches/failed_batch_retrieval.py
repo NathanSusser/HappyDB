@@ -2,9 +2,12 @@ from openai import OpenAI
 import os
 import time
 
-# File paths
-log_files_dir = "dataframes/tests/gpt40-mini/logs/"  # Directory containing log files with batch IDs
-output_files_dir = "dataframes/tests/gpt40-mini/outputs/"  # Directory to save output files
+# File paths for failed batches
+log_files_dir = "dataframes/tests/gpt40-mini/logs/"  # Directory containing log files
+output_files_dir = "dataframes/tests/gpt40-mini/failed_outputs/"  # Directory to save output files for failed batches
+
+# Ensure the output directory for failed batches exists
+os.makedirs(output_files_dir, exist_ok=True)
 
 # Retrieve the OpenAI API key securely
 api_key = os.getenv("OPENAI_API_KEY")
@@ -14,8 +17,8 @@ if not api_key:
 # Initialize the OpenAI client
 client = OpenAI(api_key=api_key)
 
-# Get the list of log files
-log_files = [f for f in os.listdir(log_files_dir) if f.endswith(".txt")]
+# Get the list of log files for failed batches
+log_files = [f for f in os.listdir(log_files_dir) if f.startswith("log_failed_batch_requests") and f.endswith(".txt")]
 
 # Process each log file
 for log_file in log_files:
@@ -63,4 +66,4 @@ for log_file in log_files:
     elif status in ["failed", "expired"]:
         print(f"Batch {batch_id} {status}. Please check your input file or batch configuration.")
 
-print("All batch content retrieval completed.")
+print("All failed batch content retrieval completed.")

@@ -27,7 +27,7 @@ for idx, row in sentences.iterrows():
     period = row['reflection_period']
     sentence = row['cleaned_hm']
     
-    if idx == 50:
+    if idx == 1000:
         print(f"Processing row: {idx}")
         break
     
@@ -46,10 +46,9 @@ for idx, row in sentences.iterrows():
     for _, item_row in items.iterrows():
         item = item_row['Item-sit']
         
-        # Construct messages
-        dev_msg = f"You are a helpful assistant who can help me code individual sentences written by people asked to describe what made them happy in the last {time_frame}."
-        user_msg = f"On a scale of 0 to 7 where 0 is strongly agree and 7 is strongly disagree, please rate ** {item} ** This is the experience: ** {sentence} ** Please only return the number on a scale of 0 to 7 of ** {item} **."
-        
+        dev_msg = f"You are a helpful research assistant who can help me code the psychological properties of people's experiences."
+        user_msg = f"The following is a description of an experience ** {sentence} **. \n \n How much does this experience indicate ** {item} **? Provide a response on a scale of 1 to 7. Respond with a low number if the experience does not indicate that {item}. Respond with a high number if the experience strongly indicates that {item}. Respond with only a number between 1 and 7. Do not provide any other response."
+            
         # Calculate token counts
         token_count_input = calculate_tokens(dev_msg) + calculate_tokens(user_msg)
         simulated_output = np.random.randint(0, 7)  # Placeholder for model output
