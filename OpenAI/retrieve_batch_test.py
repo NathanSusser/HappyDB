@@ -3,8 +3,8 @@ import os
 import time
 
 # File paths
-log_files_dir = "dataframes/tests/gpt40-mini/logs/"  # Directory containing log files with batch IDs
-output_files_dir = "dataframes/tests/gpt40-mini/outputs/"  # Directory to save output files
+log_files_dir = "dataframes/tests/gpt40-mini/CIT/logs/"  # Directory containing log files with batch IDs
+output_files_dir = "dataframes/tests/gpt40-mini/CIT/outputs/"  # Directory to save output files
 
 # Retrieve the OpenAI API key securely
 api_key = os.getenv("OPENAI_API_KEY")

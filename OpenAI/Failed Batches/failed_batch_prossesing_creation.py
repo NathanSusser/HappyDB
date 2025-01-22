@@ -6,10 +6,10 @@ import pandas as pd
 os.chdir('/Users/nsusser/Desktop/Github/happyDB/')
 sentences_path = 'dataframes/clean_sentences.csv'
 items_path = 'dataframes/scales_clean.csv'
-failed_responses_file = 'dataframes/tests/gpt40-mini/failed_responses.csv'
+failed_responses_file = 'dataframes/tests/gpt40-mini/CIT/failed_responses.csv'
 
 # Output directory for failed batch requests
-failed_output_dir = 'dataframes/tests/gpt40-mini/failed_batches/'
+failed_output_dir = 'dataframes/tests/gpt40-mini/CIT/failed_batches/'
 os.makedirs(failed_output_dir, exist_ok=True)
 
 # Load data

@@ -26,10 +26,10 @@ def calculate_tokens(text, model="gpt-4o-mini"):
 for idx, row in sentences.iterrows():
     period = row['reflection_period']
     sentence = row['cleaned_hm']
-    
+    '''
     if idx == 1000:
         print(f"Processing row: {idx}")
-        break
+        break'''
     
     # Convert period to a descriptive time
     if period == "24h":

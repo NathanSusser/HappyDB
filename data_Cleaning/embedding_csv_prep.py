@@ -39,6 +39,9 @@ PANAS_df = pd.read_csv('Profiles/PANAS.csv')
 #read in the WHO-5 items and dimensions
 WHO_5_df = pd.read_csv('Profiles/WHO-5.csv')
 
+#read in the CIT items and dimensions
+CIT_df = pd.read_csv('Profiles/CIT.csv')
+
 # rename the item columns to be consistent
 PERMA_df = PERMA_df.rename(columns={'item-sit': 'Item-sit'})
 WBP_df = WBP_df.rename(columns={'Item-sit': 'Item-sit'})
@@ -46,6 +49,7 @@ SWLS_df = SWLS_df.rename(columns={'item-sit': 'Item-sit'})
 PWB_df = PWB_df.rename(columns={'Item-sit': 'Item-sit'})
 PANAS_df = PANAS_df.rename(columns={'Item': 'Item-sit'})
 WHO_5_df = WHO_5_df.rename(columns={'Items-Sit': 'Item-sit'})
+CIT_df = CIT_df.rename(columns={'Items-Sit': 'Item-sit'})
 
 # Add a 'Scale' column to each DataFrame to identify the source
 PERMA_df['Scale'] = 'PERMA'
@@ -54,6 +58,7 @@ SWLS_df['Scale'] = 'SWLS'
 PWB_df['Scale'] = 'PWB'
 PANAS_df['Scale'] = 'PANAS'
 WHO_5_df['Scale'] = 'WHO-5'
+CIT_df['Scale'] = 'CIT'
 
 # Concatenate vertically
 combined_df = pd.concat([
@@ -62,7 +67,8 @@ combined_df = pd.concat([
     SWLS_df[['Scale', 'Dimension', 'Item-sit']],
     PWB_df[['Scale', 'Dimension', 'Item-sit']],
     PANAS_df[['Scale', 'Dimension', 'Item-sit']],
-    WHO_5_df[['Scale', 'Dimension', 'Item-sit']]
+    WHO_5_df[['Scale', 'Dimension', 'Item-sit']],
+    CIT_df[['Scale', 'Dimension', 'Item-sit']]
 ], axis=0).reset_index(drop=True)
 
 # Remove leading and trailing whitespace from all string entries

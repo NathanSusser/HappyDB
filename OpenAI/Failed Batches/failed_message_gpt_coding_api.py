@@ -5,8 +5,8 @@ from openai import OpenAI
 
 # Set up file paths
 os.chdir('/Users/nsusser/Desktop/Github/happyDB/')
-failed_batches_dir = "dataframes/tests/gpt40-mini/failed_batches/"  # Directory for failed JSONL batches
-output_files_dir = "dataframes/tests/gpt40-mini/outputs/"  # Directory to save output files
+failed_batches_dir = "dataframes/tests/gpt40-mini/CIT/failed_batches/"  # Directory for failed JSONL batches
+output_files_dir = "dataframes/tests/gpt40-mini/CIT/outputs/"  # Directory to save output files
 
 # Ensure directories exist
 os.makedirs(output_files_dir, exist_ok=True)

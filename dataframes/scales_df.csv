@@ -142,3 +142,57 @@ WHO-5,Well-Being,How much does this experience indicate the speaker felt calm an
 WHO-5,Well-Being,How much does this experience indicate the speaker felt active and vigorous?
 WHO-5,Well-Being,How much does this experience indicate the speaker woke up feeling fresh and rested?
 WHO-5,Well-Being,How much does this experience indicate the speaker's daily life has been filled with things that interest them?
+CIT,Relationship - Support,How much does this experience indicate there are people the speaker depended on to help them?
+CIT,Relationship - Support,How much does this experience indicate there are people who gave the speaker support and encouragement?
+CIT,Relationship - Support,How much does this experience indicate there are people who appreciated the speaker as a person?
+CIT,Relationship - Community,How much does this experience indicate the speaker pitched in to help when their local community needed something done?
+CIT,Relationship - Community,How much does this experience indicate the speaker invited their neighbors to their home?
+CIT,Relationship - Community,How much does this experience indicate the speaker looked for ways to help their neighbors when they are in need?
+CIT,Relationship - Trust,How much does this experience indicate the speaker trusted people in their society?
+CIT,Relationship - Trust,How much does this experience indicate people in the speaker's neighborhood could be trusted?
+CIT,Relationship - Trust,How much does this experience indicate most people the speaker met were honest?
+CIT,Relationship - Respect,How much does this experience indicate people respected the speaker?
+CIT,Relationship - Respect,How much does this experience indicate people were polite to the speaker?
+CIT,Relationship - Respect,How much does this experience indicate the speaker was treated with the same amount of respect as others?
+CIT,Relationship - Loneliness,How much does this experience indicate the speaker felt lonely?
+CIT,Relationship - Loneliness,How much does this experience indicate the speaker often felt left out?
+CIT,Relationship - Loneliness,How much does this experience indicate there was no one the speaker felt close to?
+CIT,Relationship - Belonging,How much does this experience indicate the speaker felt a sense of belonging in their community?
+CIT,Relationship - Belonging,How much does this experience indicate the speaker felt a sense of belonging in their state or province?
+CIT,Relationship - Belonging,How much does this experience indicate the speaker felt a sense of belonging in their country?
+CIT,Engagement,How much does this experience indicate the speaker was fully absorbed in the activities they were doing?
+CIT,Engagement,How much does this experience indicate the speaker felt energized in most activities they do?
+CIT,Engagement,How much does this experience indicate the speaker felt excited when they were working on something?
+CIT,Mastery - Skills,How much does this experience indicate the speaker used their skills a lot in their everyday life?
+CIT,Mastery - Skills,How much does this experience indicate the speaker used their talents?
+CIT,Mastery - Skills,How much does this experience indicate the speaker felt they do what they are good at everyday?
+CIT,Mastery - Learning,How much does this experience indicate the speaker learned something new?
+CIT,Mastery - Learning,How much does this experience indicate the speaker felt learning new things is important?
+CIT,Mastery - Learning,How much does this experience indicate the speaker always learns something everyday?
+CIT,Mastery - Accomplishment,How much does this experience indicate the speaker felt they achieved most of their goals?
+CIT,Mastery - Accomplishment,How much does this experience indicate the speaker felt they fulfilled their ambitions?
+CIT,Mastery - Accomplishment,How much does this experience indicate the speaker felt they were on track to reach their dreams?
+CIT,Mastery - Self-Efficacy,How much does this experience indicate the speaker succeeded when they put their mind to it?
+CIT,Mastery - Self-Efficacy,How much does this experience indicate the speaker was confident that they could deal with unexpected events?
+CIT,Mastery - Self-Efficacy,How much does this experience indicate the speaker believed that they are capable in most things?
+CIT,Mastery - Self-Worth,How much does this experience indicate the speaker felt what they do in life is valuable and worthwhile?
+CIT,Mastery - Self-Worth,How much does this experience indicate the speaker felt the things they did contributed to society?
+CIT,Mastery - Self-Worth,How much does this experience indicate the speaker felt the work they did was important for other people?
+CIT,Autonomy - Control,How much does this experience indicate other people decided most of the speaker's life decisions?
+CIT,Autonomy - Control,How much does this experience indicate the life choices the speaker made were not really theirs?
+CIT,Autonomy - Control,How much does this experience indicate other people decided what the speaker could and could not do?
+CIT,Meaning,How much does this experience indicate the speaker felt their life has a clear sense of purpose?
+CIT,Meaning,How much does this experience indicate the speaker felt they had found a satisfactory meaning in life?
+CIT,Meaning,How much does this experience indicate the speaker knew what gives meaning to their life?
+CIT,Optimism,How much does this experience indicate the speaker felt optimistic about their future?
+CIT,Optimism,How much does this experience indicate the speaker had a positive outlook on life?
+CIT,Optimism,How much does this experience indicate the speaker expected more good things in their life than bad?
+CIT,Subjective Well-Being - Life Satisfaction,How much does this experience indicate the speaker felt in most ways their life was close to their ideal?
+CIT,Subjective Well-Being - Life Satisfaction,How much does this experience indicate the speaker felt satisfied with their life?
+CIT,Subjective Well-Being - Life Satisfaction,How much does this experience indicate the speaker felt their life is going well?
+CIT,Subjective Well-Being - Positive Feelings,How much does this experience indicate the speaker felt positive most of the time?
+CIT,Subjective Well-Being - Positive Feelings,How much does this experience indicate the speaker felt happy most of the time?
+CIT,Subjective Well-Being - Positive Feelings,How much does this experience indicate the speaker felt good most of the time?
+CIT,Subjective Well-Being - Negative Feelings,How much does this experience indicate the speaker felt negative most of the time?
+CIT,Subjective Well-Being - Negative Feelings,How much does this experience indicate the speaker experienced unhappy feelings most of the time?
+CIT,Subjective Well-Being - Negative Feelings,How much does this experience indicate the speaker felt bad most of the time?

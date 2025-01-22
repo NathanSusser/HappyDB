@@ -4,11 +4,11 @@ import pandas as pd
 
 # Set up file paths
 os.chdir('/Users/nsusser/Desktop/Github/happyDB/')
-ratings_matrix_path = 'dataframes/tests/gpt40-mini/ratings_matrix.csv'  # Existing ratings matrix
+ratings_matrix_path = 'dataframes/tests/gpt40-mini/CIT/ratings_matrix.csv'  # Existing ratings matrix
 sentences_path = 'dataframes/clean_sentences.csv'
 items_path = 'dataframes/scales_clean.csv'
-failed_outputs_dir = 'dataframes/tests/gpt40-mini/outputs/failed_outputs'  # Directory containing failed output files
-failed_responses_file = 'dataframes/tests/gpt40-mini/failed_responses.csv'  # File to log invalid responses
+failed_outputs_dir = 'dataframes/tests/gpt40-mini/CIT/outputs/failed_outputs'  # Directory containing failed output files
+failed_responses_file = 'dataframes/tests/gpt40-mini/CIT/failed_responses.csv'  # File to log invalid responses
 
 # Load existing ratings matrix
 ratings = pd.read_csv(ratings_matrix_path, index_col=[0, 1], header=[0, 1, 2])  # Multi-index for rows and columns

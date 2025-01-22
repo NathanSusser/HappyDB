@@ -6,8 +6,8 @@ import os
 os.chdir('/Users/nsusser/Desktop/Github/happyDB/')
 sentences_path = 'dataframes/clean_sentences.csv'
 items_path = 'dataframes/scales_clean.csv'
-output_files_dir = 'dataframes/tests/gpt40-mini/outputs/'  # Directory containing batch output files
-failed_responses_file = 'dataframes/tests/gpt40-mini/failed_responses.csv'  # File to log invalid responses
+output_files_dir = 'dataframes/tests/gpt40-mini/CIT/outputs/'  # Directory containing batch output files
+failed_responses_file = 'dataframes/tests/gpt40-mini/CIT/failed_responses.csv'  # File to log invalid responses
 
 # Load sentences and items
 sentences = pd.read_csv(sentences_path)
@@ -77,7 +77,7 @@ for output_file in output_files:
                 print(f"Error processing custom_id {custom_id}: {e}")
 
 # Save the ratings matrix as a CSV file
-output_matrix_path = 'dataframes/tests/gpt40-mini/ratings_matrix.csv'
+output_matrix_path = 'dataframes/tests/gpt40-mini/CIT/ratings_matrix.csv'
 ratings.to_csv(output_matrix_path)
 print(f"Ratings matrix saved to {output_matrix_path}.")
 
