@@ -19,11 +19,9 @@ print(f"Unmatched items (treated as non-reverse-coded): {unmatched_items}")
 
 # Filter columns
 reverse_items = [col for col in results.columns if col[2].strip().lower() in reverse_coded_items]
-non_reverse_items = [col for col in results.columns if col[2].strip().lower() not in reverse_coded_items]
 
-# Separate reverse-coded and non-reverse-coded data
-reverse_items_data = results[reverse_items]
-non_reverse_items_data = results[non_reverse_items]
+# Reverse the scores for reverse-coded items
+
 
 # Compute correlation matrices for all scales
 scales = set([col[0] for col in results.columns])
@@ -44,15 +42,15 @@ for scale in scales:
             non_reverse_items = [col for col in scale_items if col[2].strip().lower() not in reverse_coded_items]
 
             # Reverse-coded PWB
-            if len(reverse_pwb_items) > 1:
-                reverse_pwb_data = scale_data[reverse_pwb_items]
+            if len(reverse_items) > 1:
+                reverse_pwb_data = scale_data[reverse_items]
                 reverse_pwb_corr = reverse_pwb_data.corr()
                 reverse_pwb_corr.to_excel(f'dataframes/tests/gpt40-mini/Correlations/PWB_reverse_correlation_matrix.xlsx')
                 print("PWB reverse-coded correlation matrix saved.")
 
             # Non-reverse-coded PWB
-            if len(non_reverse_pwb_items) > 1:
-                non_reverse_pwb_data = scale_data[non_reverse_pwb_items]
+            if len(non_reverse_items) > 1:
+                non_reverse_pwb_data = scale_data[non_reverse_items]
                 non_reverse_pwb_corr = non_reverse_pwb_data.corr()
                 non_reverse_pwb_corr.to_excel(f'dataframes/tests/gpt40-mini/Correlations/PWB_non_reverse_correlation_matrix.xlsx')
                 print("PWB non-reverse-coded correlation matrix saved.")
