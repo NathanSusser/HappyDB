@@ -17,3 +17,8 @@ venv/
 # Ignore dataframes
 dataframes/
 embedding analysis/tsne.ipynb
+
+# Ignore data json files
+data/splits/
+data/outputs/
+data/logs/

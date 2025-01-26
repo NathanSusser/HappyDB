@@ -8,15 +8,12 @@ sentences_path = 'dataframes/clean_sentences.csv'
 items_path = 'dataframes/scales_clean.csv'
 
 # Output directory for split batches
-output_dir = 'dataframes/tests/gpt40-mini/CIT/splits/'
+output_dir = 'data/splits'
 os.makedirs(output_dir, exist_ok=True)
 
 # Load data
 sentences = pd.read_csv(sentences_path)
 items = pd.read_csv(items_path)
-
-# Limit to the first 1,000 sentences
-sentences = sentences.iloc[:1000]
 
 MODEL_NAME = "gpt-4o-mini-2024-07-18"
 
@@ -50,10 +47,6 @@ for batch_num in range(num_batches):
                 time_frame = "an unknown period"
 
             for idx, item_row in items.iterrows():
-                #filter for CIT items
-                scale = item_row['Scale']
-                if scale != 'CIT':
-                    continue
                 # Get the item and request ID
                 item = item_row['Items']
                 request_id = f"{str(sent_id) + '-' + str(idx)}"

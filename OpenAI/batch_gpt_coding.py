@@ -6,9 +6,9 @@ from openai import OpenAI
 os.chdir('/Users/nsusser/Desktop/Github/happyDB/')
 
 # Directory containing the split files
-split_files_dir = "dataframes/tests/gpt40-mini/CIT/splits/"
-output_files_dir = "dataframes/tests/gpt40-mini/CIT/outputs/"
-log_files_dir = "dataframes/tests/gpt40-mini/CIT/logs/"
+split_files_dir = 'data/splits/'
+output_files_dir = 'data/outputs/'
+log_files_dir = 'data/logs/'
 
 # Create output and log directories if they don't exist
 os.makedirs(output_files_dir, exist_ok=True)
