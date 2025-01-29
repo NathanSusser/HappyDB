@@ -22,3 +22,6 @@ embedding analysis/tsne.ipynb
 data/splits/
 data/outputs/
 data/logs/
+data/Too Large Chunks/
+data/context output/
+data/failure/

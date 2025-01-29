@@ -7,7 +7,7 @@ sentences_path = 'dataframes/clean_sentences.csv'
 prompts_path = 'OpenAI/More Items/misc - prompts.csv'
 
 # Output directory for split batches
-output_dir = 'dataframes/tests/gpt40-mini/More Items/'
+output_dir = 'data/context output/'
 os.makedirs(output_dir, exist_ok=True)
 
 #load dataset
@@ -50,18 +50,13 @@ def chat4(system, user_assistant):
 allratings = [['id','raw','parsed'] + questionnames]
 
 
-istart = 400
-max_sentences = 1000
-processed_count = 400
+istart = 0
+processed_count = 0
 
 for index, row in sentences.iterrows():
     
     #specify which rows to code
     if  index >= istart  and index < istart + 5000: #and index not in completed_id:
-        # Stop after processing the first 1000 rows
-        if processed_count >= max_sentences:
-            print("Processed 1000 sentences. Stopping.")
-            break
         
         #specify system message
         dev_msg = "You are a helpful research assistant who can help me code the psychological properties of people's experiences."
@@ -81,7 +76,7 @@ for index, row in sentences.iterrows():
             ratings.append(assistant_msg)
         allratings.append(ratings)
         processed_count += 1
-        print(f"Processed index: {index} ({processed_count}/{max_sentences})")
+        print(f"Processed index: {index} ({processed_count})")
         
         if processed_count%100 == 0:
             #convert to pandas and save
