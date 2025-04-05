@@ -25,3 +25,7 @@ data/logs/
 data/Too Large Chunks/
 data/context output/
 data/failure/
+data
+analysis_data/
+images/
+
