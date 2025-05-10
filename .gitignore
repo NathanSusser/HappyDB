@@ -1,6 +1,7 @@
 # Ignore the .env file containing secrets
 .env
 
+
 # Ignore Python compiled files
 __pycache__/
 *.pyc
@@ -13,10 +14,15 @@ __pycache__/
 
 # Ignore virtual environments
 venv/
+viz-env
 
 # Ignore dataframes
 dataframes/
 embedding analysis/tsne.ipynb
+
+# Ignore spreadsheet files
+*.csv
+*.xlsx
 
 # Ignore data json files
 data/splits/
