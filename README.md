@@ -10,14 +10,14 @@ This repository contains code and data for analyzing happiness moments from the 
 
 ```
 happyDB/
-├── data_Cleaning/                    # Data preprocessing and cleaning scripts
-├── dataframes/                      # Processed datasets in CSV format
-├── factor_correlation analysis/     # Factor analysis and correlation studies
+├── data_Cleaning/                  # Data preprocessing and cleaning scripts
+├── dataframes/                     # Processed datasets in CSV format
+├── factor_correlation analysis/    # Factor analysis and correlation studies
 ├── happydb/                        # Original HappyDB corpus data
 ├── OpenAI/                         # GPT-based psychological coding pipeline
 ├── Ratings data/                   # Rating matrices and filtered data
 ├── situation analysis/             # Situational context analysis
-└── README.md                       # Original repository documentation
+└── README_happyDB.md               # Original repository documentation
 ```
 
 ---
