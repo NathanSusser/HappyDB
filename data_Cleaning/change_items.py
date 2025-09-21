@@ -1,20 +1,37 @@
-import pandas as pd
+#IMPORTS
+
+#imports
+import pandas
 import os
 
-# Set the working directory and file paths
+#set working directory
 os.chdir('/Users/nsusser/Desktop/Github/happyDB/')
+
+#=========================================
+
+#LOAD DATA
+
+#set file paths
 input_path = 'Profiles/CIT_reverse_coded.csv'
 output_path = 'Profiles/CIT_reverse_coded.csv'
 
-# Load the CSV file
-df = pd.read_csv(input_path)
+#load the csv file
+df = pandas.read_csv(input_path)
 
-# Rename the column
+#=========================================
+
+#CLEAN ITEMS
+
+#rename the column
 df.rename(columns={'Items-Sit': 'Items'}, inplace=True)
 
-# Remove the specific string from the 'Items' column
+#remove the specific string from the 'Items' column
 string_to_remove = 'How much does this experience indicate '
 df['Items'] = df['Items'].str.replace(string_to_remove, '', regex=False)
 
-# Save the cleaned data, ensuring special characters are escaped properly
+#=========================================
+
+#SAVE DATA
+
+#save the cleaned data
 df.to_csv(output_path, index=False)

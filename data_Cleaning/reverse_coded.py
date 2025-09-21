@@ -1,10 +1,21 @@
-import pandas as pd
+#IMPORTS
 
-# Load the uploaded CSV file to process it
+#imports
+import pandas
+
+#=========================================
+
+#LOAD DATA
+
+#load the uploaded CSV file to process it
 file_path = "Profiles/PWB.csv"
-data = pd.read_csv(file_path)
+data = pandas.read_csv(file_path)
 
-# List of reverse-coded items based on the previous analysis
+#=========================================
+
+#REVERSE CODED ITEMS
+
+#list of reverse-coded items based on the previous analysis
 reverse_coded_items = [
     "I am not afraid to voice my opinions, even when they are in opposition to others.",
     "For me, life has been a continuous process of learning, changing, and growth.",
@@ -29,17 +40,25 @@ reverse_coded_items = [
     "I like most parts of my personality."
 ]
 
-# Add a new column to mark if an item is reverse coded
+#add a new column to mark if an item is reverse coded
 data['Reverse Coded'] = data['Items'].apply(lambda x: 'Yes' if x in reverse_coded_items else 'No')
 data.drop(columns=['Items'], inplace=True)
 
-# Rename the column
+#=========================================
+
+#CLEAN ITEMS
+
+#rename the column
 data.rename(columns={'Item-sit': 'Items'}, inplace=True)
 
-# Remove the specific string from the 'Items' column
+#remove the specific string from the 'Items' column
 string_to_remove = 'How much does this experience indicate '
 data['Items'] = data['Items'].str.replace(string_to_remove, '', regex=False)
 
-# Save the updated data to a new CSV file
+#=========================================
+
+#SAVE DATA
+
+#save the updated data to a new CSV file
 output_file_path = "Profiles/PWB_reverse_coded.csv"
 data.to_csv(output_file_path, index=False)

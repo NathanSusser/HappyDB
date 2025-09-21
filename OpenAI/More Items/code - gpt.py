@@ -1,12 +1,22 @@
 
+#IMPORTS
+
+#imports
 import os, pandas, numpy, json, random, time
 from openai import OpenAI
 
+#set current directory
 os.chdir('/Users/nsusser/Desktop/Github/happyDB/')
+
+#=========================================
+
+#SETUP
+
+#file paths
 sentences_path = 'dataframes/clean_sentences.csv'
 prompts_path = 'OpenAI/More Items/misc - prompts.csv'
 
-# Output directory for split batches
+#output directory for split batches
 output_dir = 'data/context output/'
 os.makedirs(output_dir, exist_ok=True)
 
@@ -45,18 +55,19 @@ def chat4(system, user_assistant):
   return response.choices[0].message.content 
 
 #=========================================
+
 #CODE
 
 allratings = [['id','raw','parsed'] + questionnames]
 
-
+#processing parameters
 istart = 0
 processed_count = 0
 
 for index, row in sentences.iterrows():
     
     #specify which rows to code
-    if  index >= istart  and index < istart + 5000: #and index not in completed_id:
+    if  index >= istart  and index < istart + 5000:
         
         #specify system message
         dev_msg = "You are a helpful research assistant who can help me code the psychological properties of people's experiences."
@@ -65,6 +76,7 @@ for index, row in sentences.iterrows():
         period = row['reflection_period']
         sentence = row['cleaned_hm']
         sent_id = hmid
+        
         #iterate over the questions
         ratings = [index, sent_id, sentence]
         for q in questions:
@@ -84,10 +96,7 @@ for index, row in sentences.iterrows():
             dfout.to_csv('output - mini ' + str(istart) + '.csv')
             print('save')
 
-            
 #convert to pandas and save
 dfout = pandas.DataFrame(allratings[1:],columns = allratings[0])
 dfout.to_csv('output - mini ' + str(istart) + '.csv')
 print('save')
-        
-        

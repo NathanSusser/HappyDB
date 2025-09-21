@@ -1,17 +1,32 @@
-import pandas as pd
+#IMPORTS
 
-# Step 1: Read the CSV file into a DataFrame
-input_file = "/Users/nsusser/Desktop/Github/happyDB/Profiles/PWB.csv"  # Replace with your file name
-df = pd.read_csv(input_file)
+#imports
+import pandas
 
-# Step 2: Drop the specified columns
+#=========================================
+
+#LOAD DATA
+
+#read the CSV file into a dataframe
+input_file = "/Users/nsusser/Desktop/Github/happyDB/Profiles/PWB.csv"
+df = pandas.read_csv(input_file)
+
+#=========================================
+
+#REMOVE COLUMNS
+
+#drop the specified columns
 columns_to_remove = ["Unnamed: 3", "Unnamed: 4", "Unnamed: 5", "Unnamed: 6", "Unnamed: 7"]
 df = df.drop(columns=columns_to_remove)
 
-# Step 3: Write the updated DataFrame to a new CSV file
-output_file = "/Users/nsusser/Desktop/Github/happyDB/Profiles/PWB.csv"  # Replace with your desired output file name
+#=========================================
+
+#SAVE DATA
+
+#write the updated dataframe to a new CSV file
+output_file = "/Users/nsusser/Desktop/Github/happyDB/Profiles/PWB.csv"
 df.to_csv(output_file, index=False)
 
-# Print a message or preview the DataFrame
+#print confirmation message
 print("Updated DataFrame saved to:", output_file)
-print(df.head())  # Display the first few rows of the updated DataFrame
+print(df.head())  #display the first few rows

@@ -1,26 +1,33 @@
+#IMPORTS
+
+#imports
 import os
 import json
 import time
-import pandas as pd
+import pandas
 from openai import OpenAI
 
-# Set up file paths
+#=========================================
+
+#SETUP
+
+#set up file paths
 os.chdir('/Users/nsusser/Desktop/Github/happyDB/')
 sentences_path = 'dataframes/clean_sentences.csv'
 failed_responses_file = 'data/failure/failed_responses4.csv'
 items_path = 'dataframes/scales_clean.csv'
 
-# Output directory and file for storing responses
+#output directory and file for storing responses
 output_files_dir = "data/failure/outputs/"
 os.makedirs(output_files_dir, exist_ok=True)
-output_file_path = os.path.join(output_files_dir, "failed_responses_4.jsonl")  # Single JSONL file
+output_file_path = os.path.join(output_files_dir, "failed_responses_4.jsonl")  #single JSONL file
 
-# Load data
-sentences = pd.read_csv(sentences_path)
-items = pd.read_csv(items_path)
-failed_responses = pd.read_csv(failed_responses_file)
+#load data
+sentences = pandas.read_csv(sentences_path)
+items = pandas.read_csv(items_path)
+failed_responses = pandas.read_csv(failed_responses_file)
 
-# Initialize OpenAI client
+#initialize OpenAI client
 api_key = os.getenv("OPENAI_API_KEY")
 if not api_key:
     raise ValueError("OPENAI_API_KEY environment variable is not set.")
@@ -28,9 +35,13 @@ client = OpenAI(api_key=api_key)
 
 MODEL_NAME = "gpt-4o-mini-2024-07-18"
 
-# Open JSONL file for appending responses
+#=========================================
+
+#PROCESS FAILED RESPONSES
+
+#open JSONL file for appending responses
 with open(output_file_path, "a") as outfile:
-    # Process each failed response using request_id to fetch the correct item
+    #process each failed response using request_id to fetch the correct item
     for index, failed_row in failed_responses.iterrows():
         hmid = failed_row['hmid']
         sentence_row = sentences[sentences['hmid'] == hmid]
@@ -41,9 +52,9 @@ with open(output_file_path, "a") as outfile:
 
         sentence = sentence_row.iloc[0]['cleaned_hm']
 
-        # Extract request_id and validate against items.csv
+        #extract request_id and validate against items.csv
         try:
-            request_id = int(failed_row['custom_id'].split('-')[-1])  # Extract index from custom_id
+            request_id = int(failed_row['custom_id'].split('-')[-1])  #extract index from custom_id
         except ValueError:
             print(f"Error: Invalid request_id format in custom_id: {failed_row['custom_id']}. Skipping.")
             continue
@@ -52,9 +63,9 @@ with open(output_file_path, "a") as outfile:
             print(f"Warning: No corresponding item found for request_id {request_id}. Skipping.")
             continue
 
-        item = items.iloc[request_id]['Items']  # Pull correct item from items.csv
+        item = items.iloc[request_id]['Items']  #pull correct item from items.csv
 
-        # Construct developer and user messages
+        #construct developer and user messages
         dev_msg = "You are a helpful research assistant who can help me code the psychological properties of people's experiences."
         user_msg = (
             f"The following is a description of an experience ** {sentence} **. \n\n"
@@ -69,7 +80,7 @@ with open(output_file_path, "a") as outfile:
         print(f"User message: {user_msg}")
 
         try:
-            # Send API request
+            #send API request
             response = client.chat.completions.create(
                 model=MODEL_NAME,
                 messages=[
@@ -79,16 +90,16 @@ with open(output_file_path, "a") as outfile:
                 max_tokens=1
             )
 
-            # Format response for JSONL
+            #format response for JSONL
             response_data = {
                 "custom_id": f"request-{hmid}-{request_id}",
                 "response": response.to_dict()
             }
 
-            # Write response as a new line in the JSONL file
+            #write response as a new line in the JSONL file
             outfile.write(json.dumps(response_data) + "\n")
 
-            # Optional: Avoid hitting rate limits
+            #avoid hitting rate limits
             time.sleep(1)
 
         except Exception as e:
