@@ -1,4 +1,4 @@
-# HappyDB Repository Structure
+# The Structure of Happy Experiences Repository Structure
 
 This document provides a comprehensive overview of the repository structure and the purpose of each directory and file for academic publication.
 
